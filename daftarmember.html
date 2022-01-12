@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap/style.css" />
+</head>
+<body>
+    <hr>
+    <form action="#">
+        <h3><b>Form pendaftaran anggota baru</b></h3>
+        <div class="row mb-3">
+            <label for="codedftr" class="col-sm-2 col-form-label">Kode Pendaftaran</label>
+            <div class="col-md-2">
+              <input type="email" class="form-control text-uppercase" id="codedftr" disabled>
+            </div>
+        </div>
+        <div class="row mb-3"><!---->
+            <label for="nickname" class="col-sm-2 col-form-label">Nama</label>
+            <div class="col-md-6">
+              <input type="text" class="form-control text-uppercase" id="nickname" required>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="tmpttgl" class="col-sm-2 col-form-label">Tempat/tgl lahir</label>
+            <div class="col-md-2">
+                <input type="text" class="form-control" id="tmptlhr" required>
+            </div>
+            <div class="col-md-4">
+                <input type="date" id="tgllhr" class="form-control datepicker" >
+            </div>
+            <div class="col-md-2">
+                <span id="hasilumur"></span>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="Email" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-md-6">
+              <input type="email" class="form-control" id="Email" required>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label class="col-sm-2 col-form-label">gender</label>
+            <div class="col-md-2">
+                <input type="radio" class="form-check-input" name="pilihan" id="btn_radio1" value="option1">
+                <label for="btn_radio1" class="form-check-label">woman</label>
+            </div>
+            <div class="col-md-2">
+                <input type="radio" class="form-check-input" name="pilihan" id="btn_radio2" value="option2">
+                <label for="btn_radio2  " class="form-check-label">man</label>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="alamat" class="col-sm-2 col-form-label">alamat</label>
+            <div class="col-md-2">
+                <textarea name="alamat" class="text-capitalize" id="alamat" cols="60" rows="5"></textarea>
+            </div>
+        </div>
+        <div class="row mb-3">
+        <div class="col-md-2"></div>
+        <div class="col-md-6">
+            <button type="button" class="btn-lg btn-outline-warning">SUBMIT</button>
+        </div>
+        </div>
+</form>
+<script src="javascript/daftar3.js"></script>
+<script src="javascript/main.js"></script>
+</body>
+</html>

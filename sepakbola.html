@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap/style.css" />
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- buat tampilan form disini -->
+    <div id="judul_bola">
+      <h1>hitung hasil pertandingan</h1>
+    </div>
+    <h3>Pertandingan Piala AFF 2021</h3>
+    <form action="">
+    <div class="col-lg-2"> SKOR TIM A
+      <input type="text" name="skortima" id="skortima" class="form-control" />
+    </div>
+    <div class="col-lg-2"> SKOR TIM B
+      <input type="text" name="skortimb" id="skortimb" class="form-control"/>
+    </div>
+    <div >
+      <!-- <label for="wktpertandingan">waktu pertandingan</label> -->
+      <label for="wtanding" class="form-label">waktu tanding</label>
+      <select name="wtanding" id="wtanding" class="form-select">
+      </select>
+    </div>
+    <div class="row pt-2 ">
+      <div class="col-md-5">
+        <button type="button" id="btn_hasil" class="btn btn-primary form-control" onclick="match()">result</button>
+      </div>
+    </div>
+    <div class="alert alert-success mt-5" role="alert" id="skor" style="display: none"></div>
+  </form>
+    <!-- letakkan link ke file javascript disini -->
+    <script src="javascript/main.js"></script>
+    <script src="javascript/sepakbola.js"></script>
+  </body>
+</html>
